@@ -4,17 +4,17 @@
 
 ## 安装
 
-`pip install mdwriter`
+`pip3 install app`
 
 ## 使用方式
 
-此README是由MDWriter生成，具体使用方式可以参考[](./demo.py "")
+此README是由MDWriter生成，具体使用方式可以参考[demo.py](/demo.py "")
 
 ## 效果演示:
 
 ---
 
-测试文本*倾斜***加粗*****又粗又斜***[](http://studyai.site "")~~删掉这句话~~`Hello MDWriter`
+测试文本*倾斜***加粗*****又粗又斜***[添加超链接http://studyai.site](http://studyai.site "")~~删掉这句话~~`Hello MDWriter`
 
 ---
 
@@ -42,11 +42,11 @@ with mdw.MDWriter("./README.md") as m:
     m.write_element(mdw.MDTextArea(["一款可以用python生成markdown的工具"]))
 
     m.write_element(mdw.MDTitle("安装", level=2))
-    m.write_element(mdw.MDTextArea([mdw.MDText("pip install mdwriter", type='`')]))
+    m.write_element(mdw.MDTextArea([mdw.MDText("pip3 install app", type='`')]))
 
     m.write_element(mdw.MDTitle("使用方式", level=2))
     m.write_element(mdw.MDTextArea(["此README是由MDWriter生成，具体使用方式可以参考",
-                                    mdw.MDHyperlink("demo.py", './demo.py')]))
+                                    mdw.MDHyperlink("demo.py", '/demo.py')]))
 
     m.write_element(mdw.MDTitle("效果演示:", level=2))
 

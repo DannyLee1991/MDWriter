@@ -25,12 +25,12 @@ class MDBlock:
 
 class MDText(MDElement):
     def __init__(self, text, type=""):
-        self.mdtext = text
+        self.text = text
         self.type = type if type in ["", "*", "**", "***", "~~", "`"] else ""
         super(MDText, self).__init__()
 
     def _to_md(self) -> str:
-        return "{type}{text}{type}".format(text=self.mdtext, type=self.type)
+        return "{type}{text}{type}".format(text=self.text, type=self.type)
 
 
 class MDHyperlink(MDText):

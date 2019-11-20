@@ -1,7 +1,7 @@
-import app as mdw
+import mdwriter as mdw
 
 code = """
-import app as mdw
+import mdwriter as mdw
 
 code = \"\"
 
@@ -10,11 +10,11 @@ with mdw.MDWriter("./README.md") as m:
     m.write_element(mdw.MDTextArea(["一款可以用python生成markdown的工具"]))
 
     m.write_element(mdw.MDTitle("安装", level=2))
-    m.write_element(mdw.MDTextArea([mdw.MDText("pip install app", type='`')]))
+    m.write_element(mdw.MDTextArea([mdw.MDText("pip3 install app", type='`')]))
 
     m.write_element(mdw.MDTitle("使用方式", level=2))
     m.write_element(mdw.MDTextArea(["此README是由MDWriter生成，具体使用方式可以参考",
-                                    mdw.MDHyperlink("demo.py", './demo.py')]))
+                                    mdw.MDHyperlink("demo.py", '/demo.py')]))
 
     m.write_element(mdw.MDTitle("效果演示:", level=2))
 
@@ -49,11 +49,11 @@ with mdw.MDWriter("./README.md") as m:
     m.write_element(mdw.MDTextArea(["一款可以用python生成markdown的工具"]))
 
     m.write_element(mdw.MDTitle("安装", level=2))
-    m.write_element(mdw.MDTextArea([mdw.MDText("pip install app", type='`')]))
+    m.write_element(mdw.MDTextArea([mdw.MDText("pip3 install app", type='`')]))
 
     m.write_element(mdw.MDTitle("使用方式", level=2))
     m.write_element(mdw.MDTextArea(["此README是由MDWriter生成，具体使用方式可以参考",
-                                    mdw.MDHyperlink("demo.py", './demo.py')]))
+                                    mdw.MDHyperlink("demo.py", '/demo.py')]))
 
     m.write_element(mdw.MDTitle("效果演示:", level=2))
 
