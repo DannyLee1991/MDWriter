@@ -4,7 +4,7 @@
 
 ## 安装
 
-`pip3 install app`
+`pip3 install mdwriter`
 
 ## 使用方式
 
@@ -42,7 +42,7 @@ with mdw.MDWriter("./README.md") as m:
     m.write_element(mdw.MDTextArea(["一款可以用python生成markdown的工具"]))
 
     m.write_element(mdw.MDTitle("安装", level=2))
-    m.write_element(mdw.MDTextArea([mdw.MDText("pip3 install app", type='`')]))
+    m.write_element(mdw.MDTextArea([mdw.MDText("pip3 install mdwriter", type='`')]))
 
     m.write_element(mdw.MDTitle("使用方式", level=2))
     m.write_element(mdw.MDTextArea(["此README是由MDWriter生成，具体使用方式可以参考",
