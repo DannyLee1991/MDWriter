@@ -4,7 +4,7 @@ import sys
 
 setup(
     name="mdwriter",
-    version="0.1.0",
+    version="0.1.1",
     author="Dannylee",
     author_email="747554505@qq.com",
     description="A Python library for write markdown.",
